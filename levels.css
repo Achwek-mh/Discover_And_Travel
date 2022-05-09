@@ -1,0 +1,259 @@
+@import url('http://fonts.cdnfonts.com/css/dk-lemon-yellow-sun');
+
+*{
+    font-family: 'DK Lemon Yellow Sun', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: url(World.png);
+    background-size: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    color: #1b1717;
+    background-color: #f5deb3;
+}
+
+header h2{
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.amp{
+    color: #a88421;
+}
+
+header nav{
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+}
+
+header nav a{
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: #1b1717;
+}
+
+header nav a:hover{
+    background: linear-gradient(#a17c37,#a88421);
+    color: beige;
+    transition: 0.35s;
+    cursor: pointer;
+}
+
+header nav a:nth-child(2){
+    border-top: 4px solid #a88421;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #1b1717;
+}
+
+@media(max-width: 965px) {
+    .hamburger{
+        display: inline-block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    nav{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: wheat;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    nav a{
+        margin: 16px 40%;
+    }
+    nav.active{
+        left: 0;
+    }
+    header nav a:nth-child(2){
+        border-bottom: 4px solid #a88421;
+        border-top: none;
+    }
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro{
+    width: 500px;
+    height: 170px;
+    margin-bottom: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 150%;
+    background-color: wheat;
+    color: #1b1717;
+    border: 3px solid #a88421;
+    border-radius: 20px 0;
+    transition: 0.4s;
+}
+
+.intro:hover{
+    transform: translateY(5px);
+}
+
+.intro h3{
+    height: 20%;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 150%;
+    color: #a88421;
+}
+
+.gamename{
+    font-weight: 600;
+}
+
+@media (max-width: 536px) {
+    .intro{
+        width: 95%;
+    }
+}
+
+.lvl{
+    height: 3500px;
+    width: 95%;
+    padding: 2rem 4rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-row-gap: 3rem;
+    grid-column-gap: 6rem;
+    text-align: center;
+    background-color: wheat;
+    color: #1b1717;
+    border: 3px solid #a88421;
+    border-radius: 0 20px ;
+    transition: 0.4s;
+}
+
+.lvl:hover{
+    transform: translateY(5px);
+}
+
+.lvl a{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 3px solid #6d4607;
+    border-radius: 20px 0;
+    text-decoration: none;
+    font-size: 30px;
+    background: linear-gradient(#a17c37,#a88421);
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+.lvl a:hover{
+    transform: translateY(-5px);
+    background: linear-gradient(wheat,wheat);
+    border: 3px solid #a88421;
+    color: #1b1717;
+    cursor: pointer;
+}
+
+.iconcol{
+    fill: #131010;
+}
+
+.lvl div{
+    width: calc((100/3)*2%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1290px) {
+    .lvl{
+        grid-column-gap: 4rem;
+    }
+}
+
+@media (max-width: 1265px) {
+    .lvl{
+        grid-column-gap: 2rem;
+    }
+}
+
+@media (max-width: 1165px) {
+    .lvl{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+}
+
+@media (max-width: 840px) {
+    .lvl{
+        padding: 2rem 8rem;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,1fr);
+    }
+}
+
+@media (max-width: 690px) {
+    .lvl a{
+        flex-direction: column;
+    }
+}
+
+.sp{
+    height: 10%;
+    width: 10%;
+    font-size: 100%;
+}

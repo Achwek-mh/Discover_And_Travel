@@ -1,0 +1,551 @@
+.centerr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#hint{
+    display: none;
+}
+
+.popuppp {
+    position: absolute;
+  
+    left: 50%;
+    width: 380px;
+    height: 300px;
+    padding: 30px 20px;
+    background: #c4aea5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    opacity: 0.8;
+    top: -200%;
+    transform: translate(-50%,-50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;               
+}
+.popuppp.active {
+    opacity: 10;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+
+}
+/*.popupp .icon {
+    margin: 5px 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #34f234;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 60px;
+}
+.popupp .icon i.fa {
+    font-size: 30px;
+    color: #34f234;
+}*/
+.popuppp .titlee {
+    margin: 5px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.popuppp .descriptionn {
+    color: #222;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.popuppp .dismiss-btnn {
+    margin-top: 15px;
+}
+.popuppp .dismiss-btnn button {
+    padding: 10px 20px;
+    background: #111;
+    color: #b6afa4;
+    border: 2px solid #111;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.popuppp .dismiss-btnn button:hover {
+    color: #111;
+    background: #f77b7b;
+}
+.popuppp > div {
+    position: relative;
+    top: 10px;
+    opacity: 0.8;
+}
+.popuppp.active > div {
+    top: 0px;
+    opacity: 1;
+}
+/*.popupp.active .icon {
+    transition: all 300ms ease-in-out 250ms;
+}*/
+.popuppp.active .titlee {
+    transition: all 300ms ease-in-out 300ms;
+}
+.popuppp.active .descriptionn {
+    transition: all 300ms ease-in-out 350ms;
+}
+.popuppp.active .dismiss-btnn {
+    transition: all 300ms ease-in-out 400ms;
+}
+#open-popup-btnn{
+
+    display :block;
+    border-radius :50%
+    
+
+}
+
+
+
+
+
+.centerrr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#hint1{
+    display: none;
+}
+
+.popupppp {
+    position: absolute;
+    left: 50%;
+    width: 380px;
+    height: 300px;
+    padding: 30px 20px;
+    background: #c1aaa1;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    opacity: 0.8;
+    top: -200%;
+    transform: translate(-50%,-50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;               
+}
+.popupppp.active {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+
+}
+/*.popupp .icon {
+    margin: 5px 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #34f234;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 60px;
+}
+.popupp .icon i.fa {
+    font-size: 30px;
+    color: #34f234;
+}*/
+.popupppp .titleee {
+    margin: 5px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.popupppp .descriptionnn {
+    color: #222;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.popupppp .dismiss-btnnn {
+    margin-top: 15px;
+}
+.popupppp .dismiss-btnnn button {
+    padding: 10px 20px;
+    background: #111;
+    color: #fffcfc;
+    border: 2px solid #111;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.popupppp .dismiss-btnnn button:hover {
+    color: #111;
+    background: #f77b7b;
+}
+.popupppp > div {
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+.popupppp.active > div {
+    top: 0px;
+    opacity: 1;
+}
+/*.popupp.active .icon {
+    transition: all 300ms ease-in-out 250ms;
+}*/
+.popupppp.active .titleee {
+    transition: all 300ms ease-in-out 300ms;
+}
+.popupppp.active .descriptionnn {
+    transition: all 300ms ease-in-out 350ms;
+}
+.popupppp.active .dismiss-btnnn {
+    transition: all 300ms ease-in-out 400ms;
+}
+#open-popup-btnnn{
+
+    display :block;
+    border-radius :50%
+    
+
+}
+
+.centerrrr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#hint2{
+    display: none;
+}
+
+.popuppppp {
+    position: absolute;
+  
+    left: 50%;
+    width: 380px;
+    height: 300px;
+    padding: 30px 20px;
+    background: #c4aea5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    top: -200%;
+    transform: translate(-50%,-50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;               
+}
+.popuppppp.active {
+    opacity: 10;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+
+}
+/*.popupp .icon {
+    margin: 5px 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #34f234;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 60px;
+}
+.popupp .icon i.fa {
+    font-size: 30px;
+    color: #34f234;
+}*/
+.popuppppp .titleeee {
+    margin: 5px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.popuppppp .descriptionnnn {
+    color: #222;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.popuppppp .dismiss-btnnnn {
+    margin-top: 15px;
+}
+.popuppppp .dismiss-btnnnn button {
+    padding: 10px 20px;
+    background: #111;
+    color: #f8f6f2;
+    border: 2px solid #111;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.popuppppp .dismiss-btnnnn button:hover {
+    color: #111;
+    background: #f77b7b;
+}
+.popuppppp > div {
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+.popuppppp.active > div {
+    top: 0px;
+    opacity: 1;
+}
+/*.popupp.active .icon {
+    transition: all 300ms ease-in-out 250ms;
+}*/
+.popuppppp.active .titleeee {
+    transition: all 300ms ease-in-out 300ms;
+}
+.popuppppp.active .descriptionnnn {
+    transition: all 300ms ease-in-out 350ms;
+}
+.popuppppp.active .dismiss-btnnnn {
+    transition: all 300ms ease-in-out 400ms;
+}
+#open-popup-btnnnn{
+
+    display :block;
+    border-radius :50%
+    
+
+}
+.centerrrrr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#hint3{
+    display: none;
+}
+
+.popupppppp {
+    position: absolute;
+  
+    left: 50%;
+    width: 380px;
+    height: 300px;
+    padding: 30px 20px;
+    background: #c4aea5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    top: -200%;
+    transform: translate(-50%,-50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;               
+}
+.popupppppp.active {
+    opacity: 10;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+
+}
+/*.popupp .icon {
+    margin: 5px 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #34f234;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 60px;
+}
+.popupp .icon i.fa {
+    font-size: 30px;
+    color: #34f234;
+}*/
+.popupppppp .titleeeee {
+    margin: 5px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.popupppppp .descriptionnnnn {
+    color: #222;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.popupppppp .dismiss-btnnnnn {
+    margin-top: 15px;
+}
+.popupppppp .dismiss-btnnnnn button {
+    padding: 10px 20px;
+    background: #111;
+    color: #f7f6f6;
+    border: 2px solid #111;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.popupppppp .dismiss-btnnnnn button:hover {
+    color: #111;
+    background: #f77b7b;
+}
+.popupppppp > div {
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+.popupppppp.active > div {
+    top: 0px;
+    opacity: 1;
+}
+/*.popupp.active .icon {
+    transition: all 300ms ease-in-out 250ms;
+}*/
+.popupppppp.active .titleeeee {
+    transition: all 300ms ease-in-out 300ms;
+}
+.popupppppp.active .descriptionnnnn {
+    transition: all 300ms ease-in-out 350ms;
+}
+.popupppppp.active .dismiss-btnnnnn {
+    transition: all 300ms ease-in-out 400ms;
+}
+#open-popup-btnnnnn{
+
+    display :block;
+    border-radius :50%
+    
+
+}
+.centerrrrrr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#hint4{
+    display: none;
+}
+
+.popuppppppp {
+    position: absolute;
+  
+    left: 50%;
+    width: 380px;
+    height: 300px;
+    padding: 30px 20px;
+    background: #c4aea5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    top: -200%;
+    transform: translate(-50%,-50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;               
+}
+.popuppppppp.active {
+    opacity: 10;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+
+}
+/*.popupp .icon {
+    margin: 5px 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #34f234;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 60px;
+}
+.popupp .icon i.fa {
+    font-size: 30px;
+    color: #34f234;
+}*/
+.popuppppppp .titleeeeee {
+    margin: 5px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.popuppppppp .descriptionnnnnn {
+    color: #222;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.popuppppppp .dismiss-btnnnnnn {
+    margin-top: 15px;
+}
+.popuppppppp .dismiss-btnnnnnn button {
+    padding: 10px 20px;
+    background: #111;
+    color: #f8f3f3;
+    border: 2px solid #111;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.popuppppppp .dismiss-btnnnnnn button:hover {
+    color: #111;
+    background: #f77b7b;
+}
+.popuppppppp > div {
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+.popuppppppp.active > div {
+    top: 0px;
+    opacity: 1;
+}
+/*.popupp.active .icon {
+    transition: all 300ms ease-in-out 250ms;
+}*/
+.popuppppppp.active .titleeeeee {
+    transition: all 300ms ease-in-out 300ms;
+}
+.popuppppppp.active .descriptionnnnnn {
+    transition: all 300ms ease-in-out 350ms;
+}
+.popuppppppp.active .dismiss-btnnnnnn {
+    transition: all 300ms ease-in-out 400ms;
+}
+#open-popup-btnnnnnn{
+
+    display :block;
+    border-radius :50%
+    
+
+}
+
+
+
+

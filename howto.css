@@ -1,0 +1,326 @@
+@import url('http://fonts.cdnfonts.com/css/dk-lemon-yellow-sun');
+*{
+    font-family: 'DK Lemon Yellow Sun', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: url(World.png);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    color: #1b1717;
+    background-color: wheat;
+}
+
+header h2{
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.amp{
+    color: #a88421;
+}
+
+header nav{
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+}
+
+header nav a{
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: #1b1717;
+}
+
+header nav a:hover{
+    background: linear-gradient(#a17c37,#a88421);
+    color: beige;
+    transition: 0.35s;
+    cursor: pointer;
+}
+
+header nav a:nth-child(3){
+    border-top: 4px solid #a88421;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #1b1717;
+}
+
+@media(max-width: 965px) {
+    .hamburger{
+        display: inline-block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    nav{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: wheat;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    nav a{
+        margin: 16px 40%;
+    }
+    nav.active{
+        left: 0;
+    }
+    header nav a:nth-child(3){
+        border-bottom: 4px solid #a88421;
+        border-top: none;
+    }
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tuto{
+    width: 90%;
+    height: 1000%;
+    margin: 1rem 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 150%;
+    background-color: wheat;
+    color: #1b1717;
+    border: 3px solid #a88421;
+    border-radius: 20px 0;
+    transition: 0.4s;
+}
+
+.tuto:hover{
+    transform: translateY(5px);
+}
+
+.tuto h3{
+    height: 10%;
+    width: 100%;
+    font-weight: 800;
+    font-size: 200%;
+    color: #a88421;
+}
+
+.intro{
+    height: 10%;
+    width: 100%;
+    margin: 0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gamename{
+    font-weight: 600;
+}
+
+.content{
+    height: 150%;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instr{
+    width: 97%;
+    height: calc((1/6)*100%);
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 3px solid #6d4607;
+    border-radius: 0 20px;
+    background: linear-gradient(#a17c37,#a88421);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.2s ease-in;
+}
+
+.instr:hover{
+    transform: translateY(-5px);
+}
+
+.instr img{
+    width: 45%;
+    height: 10em;
+    border: 2px solid #6d4607;
+    border-radius: 20px 0;
+}
+
+.dscrp{
+    width: 45%;
+    height: 10em;
+    padding: 1rem;
+    border: 2px solid #6d4607;
+    border-radius: 20px 0;
+    background: linear-gradient(wheat,wheat);
+    color: #1b1717;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    font-size: 95%;
+    font-weight: 500;
+}
+
+.dscrp:hover{
+    transform: translateY(-5px);
+    border-width: 3px;
+    cursor: pointer;
+}
+
+.pn{
+    width: 40%;
+    height: 20%;
+    padding: 1em;
+    margin: 1rem;
+    border: 3px solid #a88421;
+    border-radius: 0 20px;
+    background: linear-gradient(#f5deb3,wheat);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 150%;
+    transition: 0.2s ease-in;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: #1b1717;
+}
+
+.pn:hover{
+    transform: translateY(5px);
+    background: linear-gradient(#a17c37,#a88421);
+    border: 3px solid #6d4607;
+    color: white;
+}
+
+.sp{
+    height: 10%;
+    width: 10%;
+    font-size: 100%;
+}
+
+@media (max-width: 1265px) {
+    .pn{
+        width: 50%;
+    }
+    .tuto{
+        width:95%;
+    }
+}
+
+@media (max-width: 1015px) {
+    .intro{
+        width: 95%;
+    }
+    .intro p:nth-child(2){
+        font-size: 85%;
+    }
+    .instr img{
+        width: 55%;
+        height: 8em;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 925px) {
+    .pn{
+        width: 60%;
+    }
+    .intro p:nth-child(2){
+        width: 50%;
+    }
+    .instr{
+        width: 90%;
+        flex-direction: column;
+    }
+    .instr img{
+        width: 85%;
+        height: 10em;
+        margin: 1rem;
+    }
+    .dscrp{
+        width: 85%;
+        height: 10em;
+    }
+}
+
+@media (max-width: 795px) {
+    .instr img{
+        width: 90%;
+
+    }
+    .dscrp{
+        width: 90%;
+        height: 10em;
+    }
+}
+
+@media (max-width: 705px) {
+    .instr img{
+        width: 95%;
+        height: 8em;
+    }
+    .dscrp{
+        width: 95%;
+    }
+    .pn{
+        width: 75%;
+    }
+}
+
+@media (max-width: 576px) {
+    .pn{
+        width: 87%;
+    }
+}

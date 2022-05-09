@@ -1,0 +1,189 @@
+@import url('http://fonts.cdnfonts.com/css/dk-lemon-yellow-sun');
+*{
+    font-family: 'DK Lemon Yellow Sun', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background: url(World.png);
+    background-size: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    color: #1b1717;
+    background-color: wheat;
+}
+
+header h2{
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.amp{
+    color: #a88421;
+}
+
+header nav{
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+}
+
+header nav a{
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: #1b1717;
+}
+
+header nav a:hover{
+    background: linear-gradient(#a17c37,#a88421);
+    color: beige;
+    transition: 0.35s;
+    cursor: pointer;
+}
+
+header nav a:nth-child(1){
+    border-top: 4px solid #a88421;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #1b1717;
+}
+
+main{
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main p{
+    width: 700px;
+    height: 160px;
+    text-align: center;
+    font-size: 400%;
+    background-color: wheat;
+    color: #1b1717;
+    border: 3px solid #a88421;
+    border-radius: 20px 0;
+    transition: 0.4s;
+}
+
+main p:hover{
+    transform: translateY(5px);
+}
+
+main p span{
+    font-weight: 600;
+}
+
+main a{
+    width: 250px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border: 3px solid #6d4607;
+    border-radius: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: 0.4s;
+    color: white;
+    background: linear-gradient(#a17c37,#a88421)
+}
+
+main a:hover{
+    transform: translateY(5px);
+    background: linear-gradient(wheat,wheat);
+    border: 3px solid #a88421;
+    color: #1b1717;
+    cursor: pointer;
+}
+
+@media(max-width: 965px) {
+    .hamburger{
+        display: inline-block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    nav{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: wheat;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    nav a{
+        margin: 16px 40%;
+    }
+    nav.active{
+        left: 0;
+    }
+    header nav a:nth-child(1){
+        border-bottom: 4px solid #a88421;
+        border-top: none;
+    }
+}
+
+@media (max-width: 768px) {
+    main p{
+        width: 65%;
+        height: 175px;
+    }
+}
+
+@media (max-width: 685px) {
+    main p{
+        font-size: 350%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 570px) {
+    main p{
+        font-size: 300%;
+        height: 125px;
+    }
+}
