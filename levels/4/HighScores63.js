@@ -4,7 +4,7 @@ let questions3 = [
   question3: "For which Chinese Emperor was the Terracotta Army created?",
   answer3: "Emperor Qin" ,
   options3: [
-    "Emperor Qin ",
+    "Emperor Qin",
     "The yellow Emperor",
     "Marco Polo"
     

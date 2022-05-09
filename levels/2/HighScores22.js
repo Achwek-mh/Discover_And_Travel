@@ -1,9 +1,9 @@
 let questions3 = [
   {
-  numb3: 1,
-  question3: "Who is Zeus' father?",
-  answer3: "Chronos",
-  options3: [
+  numb2: 1,
+  question2: "Who is Zeus' father?",
+  answer2: "Chronos",
+  options2: [
     "Appolon",
     "Chronos",
     "Ulysse"
@@ -11,20 +11,20 @@ let questions3 = [
   ]
 },
   {
-  numb3: 2,
-  question3: "Who is Zeus married to?",
-  answer3: "Hera",
-  options3: [
+  numb2: 2,
+  question2: "Who is Zeus married to?",
+  answer2: "Hera",
+  options2: [
     "Aphrodite",
     "Rhéa", 
    "Hera" 
   ]
 },
   {
-  numb3: 3,
-  question3: "Zeus has how many children?",
-  answer3: "30",
-  options3: [
+  numb2: 3,
+  question2: "Zeus has how many children?",
+  answer2: "30",
+  options2: [
     "27",
     "30",
     "34"]

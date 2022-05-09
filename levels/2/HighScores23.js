@@ -1,9 +1,9 @@
-let questions = [
+let questions3 = [
   {
-  numb: 1,
-  question: "The Domes of Santorini are located in ..",
-  answer: "Oia",
-  options: [
+  numb3: 1,
+  question3: "The Domes of Santorini are located in ..",
+  answer3: "Oia",
+  options3: [
     "Fiskardo",
     "Parikia",
     "Oia"
@@ -11,20 +11,20 @@ let questions = [
   ]
 },
   {
-  numb: 2,
-  question: "Oia is a .. Santorini town ",
-  answer: "Northern",
-  options: [
+  numb3: 2,
+  question3: "Oia is a .. Santorini town ",
+  answer3: "Northern",
+  options3: [
     "Northern",
     "Southern", 
    "Western" 
   ]
 },
   {
-  numb: 3,
-  question: "The capital of the island of Santorini is ..",
-  answer: "Fira",
-  options: [
+  numb3: 3,
+  question3: "The capital of the island of Santorini is ..",
+  answer3: "Fira",
+  options3: [
     "Nafplio",
     "Fira",
     "Metsovo"]

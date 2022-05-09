@@ -1,4 +1,4 @@
-const startmin = 5;
+const startmin = 6;
 let timee = startmin * 60;
 let rec = 0;
 var ele = document.getElementById('timerr');

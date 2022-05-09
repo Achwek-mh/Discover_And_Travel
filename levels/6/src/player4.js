@@ -41,7 +41,7 @@ move = function (timeDelta) {
     console.log(`this is x: ${position.x}`);
     console.log(position.y);
 
-    if(player.x>18.46 && player.x<18.9 && clicked===false   ){ 
+     if(player.x>18.46 && player.x<18.9 && clicked===false   ){ 
         document.getElementById("popup").style.display = "block";
         stopp=1; 
         
@@ -79,13 +79,13 @@ move = function (timeDelta) {
         document.getElementById("popup7").style.display = "block";
         console.log('popup7');
          stopp=1; 
-
+ 
     } 
 
-    if(player.x>6.5 && player.x<7.65 && player.y<1.5 && player.y>1.4){
+    if(player.x>3.4 && player.x<4.4 && player.y>20.43){
         document.getElementById("finish").style.display = "block";
         console.log('ppopupp');
-       // stopp=1; 
+        stopp=1; 
         stoop();
        }  
 }

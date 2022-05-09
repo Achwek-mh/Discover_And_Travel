@@ -164,11 +164,18 @@ function showResult() {
         let scoreTag = '<span>and congrats! , You got <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
         userScore = 0;
+        retry.disabled=true;
+        resume.disabled=false;
+       
+
     }
     else if (userScore >= 1) { // if user scored more than 1
         let scoreTag = '<span>and nice , You got <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
         userScore = 0;
+        retry.disabled=true;
+        resume.disabled=false;
+
 
     }
     else if (userScore == 0) { // if user scored less than 1

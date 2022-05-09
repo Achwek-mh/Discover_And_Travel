@@ -1,9 +1,9 @@
-let questions2 = [
+let questions = [
   {
-  numb2: 1,
-  question2: "The Parthenon was built to honor .. ",
-  answer2: "Athena",
-  options2: [
+  numb: 1,
+  question: "The Parthenon was built to honor .. ",
+  answer: "Athena",
+  options: [
     "Medusa",
     "Zeus",
     "Athena"
@@ -11,20 +11,20 @@ let questions2 = [
   ]
 },
   {
-  numb2: 2,
-  question2: "The Parthenon is on top of ..",
-  answer2: "The Acropolis",
-  options2: [
+  numb: 2,
+  question: "The Parthenon is on top of ..",
+  answer: "The Acropolis",
+  options: [
     "The Acropolis",
     "A cave", 
    "A church" 
   ]
 },
   {
-  numb2: 3,
-  question2: "The Parthenon was a ..",
-  answer2: "Doric temple",
-  options2: [
+  numb: 3,
+  question: "The Parthenon was a ..",
+  answer: "Doric temple",
+  options: [
     "Ionic temple",
     "Corinthian temple",
     "Doric temple"]

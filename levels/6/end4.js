@@ -15,5 +15,5 @@ exit.addEventListener('click',  ()  =>  {
 const next=document.getElementById("nexxt");
 next.addEventListener('click',() => {
     document.getElementById('finish').style.display = 'none';
-    window.location.pathname = 'play.html';
+    window.location.pathname = 'levels.html';
 })

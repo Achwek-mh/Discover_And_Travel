@@ -129,7 +129,7 @@ body{
 }
  
 .quiz_box {
-    width: 400px;
+    width: 500px;
     height: 590px;
     padding: 25px 30px 30px 30px;
     background-image: url("src/assets/lettre.jpg");

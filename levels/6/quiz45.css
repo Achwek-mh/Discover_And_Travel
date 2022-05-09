@@ -90,7 +90,7 @@ body{
     margin-top: 30px;
     padding: 0 30px;
     color: #1b180c;
-    background: #d1bba1;
+    background: #f8f8f8;
     border: 1px solid #413f36;
     height: 45px;
     border-radius: 5px;
@@ -149,7 +149,7 @@ body{
 }
 
 .quiz_box5 .option_list5 .option5{
-    background: #d1bba1;
+    background: #fbfbfb;
     border: 1px solid #413f36;
     border-radius: 5px;
     padding: 8px 15px;
@@ -331,10 +331,7 @@ footer button.show{
     background: #0263ca;
 } */
 
-.buttons5 button.quit5{
-    color: #4e381f;
-    background: #fff;
-}
+
 
 .buttons5 button.quit5:hover{
     color: #fff;
